@@ -1,0 +1,3 @@
+import matplotlib.pyplot as plt
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+plt.bar(list(alphabet), [corpus.lower().count(letter) for letter in alphabet])

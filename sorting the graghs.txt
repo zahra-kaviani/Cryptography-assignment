@@ -1,0 +1,7 @@
+import pandas as pd
+df = pd.DataFrame({
+    "letter": list(alphabet),
+    "count": [corpus.lower().count(letter) for letter in alphabet]
+})
+df = df.sort_values("count")
+plt.bar(df["letter"], df["count"])
